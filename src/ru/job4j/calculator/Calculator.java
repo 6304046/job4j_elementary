@@ -2,14 +2,20 @@ package ru.job4j.calculator;
 
 public class Calculator {
 
-    public static void plus(int first, int second) {
-        int result = first + second;
-        System.out.println(result);
+    public static void hello(String name) {
+        System.out.println("Hello, " + name);
+    }
+    public static void hello(int age) {
+        System.out.println(age);
     }
 
     public static void main(String[] args) {
-        Calculator.plus(100, 500);
-        Calculator.plus(4, 2);
-        Calculator.plus(3, 5);
+        String name = "Petr Arsentev";
+        int age = 33;
+
+        Calculator.hello(name);
+        Calculator.hello(age);
     }
 }
+
+
