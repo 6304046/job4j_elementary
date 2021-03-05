@@ -2,19 +2,34 @@ package ru.job4j.calculator;
 
 public class Calculator {
 
-    public static void hello(String name) {
-        System.out.println("Hello, " + name);
+    public static int func1(int x) {
+        int y = x * x + 1;
+        return y;
     }
-    public static void hello(int age) {
-        System.out.println(age);
+
+    public static int func2(int x) {
+        int y = 1 * x;
+        return y;
+    }
+
+    public static int priceProduct(int numOfProducts, int price) {
+        int result = numOfProducts * price;
+        return result;
+    }
+
+    public static void print(int value) {
+        System.out.println(value);
     }
 
     public static void main(String[] args) {
-        String name = "Petr Arsentev";
-        int age = 33;
+//        int result1 = Calculator.func1(100);
+//        int result2 = Calculator.func2(100);
+//        int total = result1 + result2;
+//        System.out.println(total);
 
-        Calculator.hello(name);
-        Calculator.hello(age);
+
+        int priceOfChocolate = priceProduct(10, 50);
+        print(priceOfChocolate);
     }
 }
 
