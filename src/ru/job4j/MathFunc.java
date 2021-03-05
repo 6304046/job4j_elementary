@@ -13,7 +13,7 @@ public class MathFunc {
 
     public static void main(String[] args) {
         int result1 = MathFunc.func1(100);
-        int result2 = MathFunc.func2(150);
+        int result2 = MathFunc.func2(100);
         int total = result1 + result2;
         System.out.println(total);
 }
