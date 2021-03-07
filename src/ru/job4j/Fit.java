@@ -2,21 +2,21 @@ package ru.job4j;
 
 public class Fit {
     public static double manWeight(short height) {
-        double rsl = (180-100)*1.15;
+        double rsl = (height-100)*1.15;
         return rsl;
     }
 
     public static double womanWeight(short height1) {
-        double rsl = (160-110)*1.15;
+        double rsl = (height1-110)*1.15;
         return rsl;
     }
 
     public static void main(String [] args) {
-        short height = 180;
+        short height = 205;
         double man = Fit.manWeight(height);
-        System.out.println("Man 180 is " + man);
-        short height1 = 160;
+        System.out.println("Man " + height + " is " + man);
+        short height1 = 180;
         double woman = Fit.womanWeight(height);
-        System.out.println("Woman 160 is " + woman);
+        System.out.println("Woman " + height1 + " is " + woman);
     }
 }
